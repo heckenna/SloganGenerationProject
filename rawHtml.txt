@@ -1,1 +1,219 @@
-test
+<html>
+<!-- #BeginTemplate "/Templates/english-s-pages.dwt" -->
+<!-- DW6 -->
+
+<head>
+	<!-- #BeginEditable "doctitle" -->
+	<title>Car rental slogans, taglines | Textart.ru database of slogans</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<meta name="Description" content="Advertising slogans, taglines for car rental, car hire companies.">
+	<meta name="Keywords" content=" ">
+	<!-- #EndEditable -->
+	<link rel="stylesheet" href="/styles.css" type="text/css">
+</head>
+
+<body>
+	<table width="800" align="center">
+		<tr>
+			<td>
+
+				<table align="center" width="800">
+					<tr>
+						<td id="round" background="http://www.textart.ru/images/eng-header-slogans.gif"
+							style="padding: 70px 60px 5px 0px">
+
+							<div align="right">
+								<form action="http://www.textart.ru/eng-search.html" id="cse-search-box">
+									<div>
+										<input type="hidden" name="cx" value="partner-pub-9773586419977540:9827305069" />
+										<input type="hidden" name="cof" value="FORID:10" />
+										<input type="hidden" name="ie" value="Windows-1252" />
+										<input type="text" name="q" size="35" />
+										<input type="submit" name="sa" value="Search" />
+  </div>
+								</form>
+
+								<script type="text/javascript"
+									src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+
+							</div>
+						</td>
+					</tr>
+				</table>
+
+
+
+				<table width="800" cellpadding="20">
+					<tr>
+						<td width="500">
+							<div class="paragraf">
+								<b><a href="http://www.textart.ru/database/slogan/list-advertising-slogans.html">Slogans</a></b>
+								&rarr;
+								<!-- #BeginEditable "1" -->
+								<a
+									href="http://www.textart.ru/database/slogans/automotive/list.html"><b>Automotive slogans</b></a>
+								&rarr;
+								Car rental slogans
+								<!-- #EndEditable -->
+							</div>
+						</td>
+						<td width="300" align="right">
+							<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script>
+							<div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="small"
+								data-yashareQuickServices="facebook,twitter,gplus" data-yashareTheme="counter"></div>
+						</td>
+					</tr>
+				</table>
+
+				<table width="800" cellpadding="25">
+					<tr>
+						<td id="round">
+
+							<div style="display:block;float:left;margin: 20px 25px 15px 5px;">
+
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- eng-pages-verh -->
+								<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+									data-ad-client="ca-pub-9773586419977540" data-ad-slot="3867443865"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+
+							</div>
+
+
+							<h1 align="left"><br>
+								<!-- #BeginEditable "2" -->Car rental slogans
+								<!-- #EndEditable -->
+							</h1><br>
+
+							<!-- #BeginEditable "3" -->
+							<p class="paragraf">Hertz, international car rental company<br>
+        Slogans: <span class="slogan">Love the road.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;Hertz. Rent wisely.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;Hertz. Fun collection.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;Small world. Small rates.</span></p>
+							<p class="paragraf">Budget Rent A Car System, car rental company<br>
+        Taglines: <span class="slogan">Budget. Get out of the ordinary.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;All the difference in the world.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;The natural choice.</span></p>
+							<p class="paragraf">National Car Rental Company<br>
+								<span class="slogan">When you're ready, we're ready.</span></p>
+							<p class="paragraf">Avis Car Rental<br>
+        Slogans: <span class="slogan">Avis. It's your space.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;We're trying harder than ever.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;Avis. We try harder.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;We're number two. We try harder.</span></p>
+							<p class="paragraf">Europcar, international car and van rentals<br>
+        Slogans: <span class="slogan">Europcar. Moving your way.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;Driven by you.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;You rent a lot more than a car.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;The worldwide welcome.</span></p>
+
+							<div align="center"><br>
+
+								<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+								<!-- eng-pages-center -->
+								<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px"
+									data-ad-client="ca-pub-9773586419977540" data-ad-slot="9265133555"></ins>
+								<script>
+									(adsbygoogle = window.adsbygoogle || []).push({});
+								</script>
+
+								<br><br>
+</div>
+
+
+								<p class="paragraf">Auto Europe, car rental company<br>
+									<span class="slogan">You're better off driving our way.</span></p>
+
+								<div style="display:block;float:right;margin: 5px 5px 5px 5px;">
+
+									<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js">
+									</script>
+									<!-- eng-pages-niz -->
+									<ins class="adsbygoogle" style="display:inline-block;width:300px;height:600px"
+										data-ad-client="ca-pub-9773586419977540" data-ad-slot="9215973461"></ins>
+									<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+									</script>
+
+								</div>
+
+								<p class="paragraf">Guy Salmon, car hire company<br>
+									<span class="slogan">Guy Salmon. Prestige rental.</span></p>
+								<p class="paragraf">Alamo Rent A Car, car rental agency in the United States<br>
+        Slogans: <span class="slogan">Alamo. Drive happy.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;It comes with the territory.</span></p>
+								<p class="paragraf">The Car Rental Place, car rental agency in Toronto<br>
+									<span class="slogan">If service counts, count on us!</span></p>
+								<p class="paragraf">Thrifty Car Rental<br>
+        Slogans: <span class="slogan">Thrifty. Saves you money.<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;How can we help today?<br>
+&emsp;&emsp;&emsp;&emsp;&nbsp;Now that�s Thrifty thinking.</span></p>
+								<p class="paragraf">Dollar Rent A Car<br>
+									<span class="slogan">Home of our lowest rates.</span></p>
+								<p class="paragraf">Payless Car Rental<br>
+									<span class="slogan">The driving force of the 90�s!</span></p>
+								<p class="paragraf">Sunny Cars, car rental broker<br>
+									<span class="slogan">Sunny Cars. Rent a smile.</span></p>
+								<p class="paragraf">All Car Rent-a-Car, New York car rental company<br>
+									<span class="slogan">Flexible. Accessible. Affordable.</span></p>
+								<p class="paragraf">Enterprise Rent-A-Car, car rental company in North America<br>
+									<span class="slogan">Pick Enterprise. We'll pick you up.</span></p>
+								<p align="center" class="else">Car rental slogans 1 - <a
+										href="http://www.textart.ru/advertising/slogans/car-rental2.html">2</a> - <a
+										href="http://www.textart.ru/advertising/slogans/car-rental3.html">3</a> - <a
+										href="http://www.textart.ru/advertising/slogans/car-rental4.html">4</a> - <a
+										href="http://www.textart.ru/advertising/slogans/car-rental5.html">5</a></p>
+								<!-- #EndEditable -->
+						</td>
+
+					</tr>
+				</table>
+
+				<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+				</script>
+				<script type="text/javascript">
+					_uacct = "UA-342279-1";
+urchinTracker();
+				</script>
+
+				<!-- Yandex.Metrika counter -->
+				<script type="text/javascript">
+					(function (d, w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter31489883 = new Ya.Metrika({id:31489883,
+                    webvisor:true,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+        } catch(e) { }
+    });
+
+    var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+    if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+})(document, window, "yandex_metrika_callbacks");
+				</script>
+				<noscript>
+					<div>
+						<img src="//mc.yandex.ru/watch/31489883" style="position:absolute; left:-9999px;" alt="" /></div>
+				</noscript>
+				<!-- /Yandex.Metrika counter -->
+
+			</td>
+		</tr>
+	</table>
+</body>
+<!-- #EndTemplate -->
+
+</html>
