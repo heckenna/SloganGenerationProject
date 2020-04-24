@@ -7,10 +7,15 @@ import time
 
 base_url = "http://www.textart.ru/"
 
-def parseSloganPage(url):
 
+
+def parseSloganPage(url, categoryUrl, isFirstPage=True):
+    global slogan_count
     page = requests.get(url)
     tree = html.fromstring(page.content)
+    subpages = tree.xpath('//option[@value="#"]/text()')
+    if(subpages):
+        return parseSingleCategory(url)
     def removeEmsp(x): return x.replace("\u2003", "")
     def startsNewline(x): return not x[0] == "\n"
     def removeNonAlpha(x): return re.sub('[\W_]+', ' ', x, flags=re.UNICODE)
@@ -19,12 +24,13 @@ def parseSloganPage(url):
         map(removeEmsp, tree.xpath('//p[@class="paragraf"]/text()')))))))
     slogans = list(map(removeEmsp, tree.xpath(
         '//span[@class="slogan"]/text()')))
+
     pairs = dict()
     print(url)
     # print(companies, len(slogans))
     j = 0
     for i, slogan in enumerate(slogans):
-
+        slogan_count+=1
         if not "\n" in slogan:
             if(not companies[j] in pairs):
                 pairs[companies[j]] = list()
@@ -37,14 +43,43 @@ def parseSloganPage(url):
             pairs[companies[j - 1]].append(slogan)
             # print(companies[j - 1], ">>", slogan)
 
+    if(isFirstPage):
+        nextPages = tree.xpath('//p[@align="center"]')
+        # print(nextPages[0])
+        # print(nextPages)
+        if(nextPages):
+            nextPages=nextPages[0].xpath('./a[@href]/@href')
+            print(len(nextPages),"more pages found")
+            for nextPage in nextPages:
+                pairs.update(parseSloganPage(formatUrl(nextPage, categoryUrl), categoryUrl, False))
     return pairs
 
 def formatUrl(rawUrl, categoryUrl):
     if not base_url in rawUrl:
-        url = categoryUrl.replace("index.html", rawUrl)
+        if "index.html" in categoryUrl:
+            url = categoryUrl.replace("index.html", rawUrl)
+        elif "slogans.html" in categoryUrl:
+            url = categoryUrl.replace("slogans.html", rawUrl)
         # print(url)
         return url
     return rawUrl
+
+def parseSingleCategory(url):
+    page = requests.get(url)
+    tree = html.fromstring(page.content)
+    subcategories = tree.xpath('//option[@value]/text()')
+    subcategories_links = tree.xpath('//option[@value]//@value')
+    categoryEntry = dict()
+    for i in range(len(subcategories)):
+        if(subcategories_links[i] == "#" or subcategories[i] == "Department stores"):
+            continue
+        
+        subDict = parseSloganPage(formatUrl(subcategories_links[i], url), url)
+        categoryEntry[subcategories[i]] = subDict
+        time.sleep(0.05)
+    
+    return categoryEntry
+    
 
 def parseCategories():
 
@@ -54,19 +89,9 @@ def parseCategories():
     for category in data:
         categories[category] = dict()
 
-        page = requests.get(data[category])
-        tree = html.fromstring(page.content)
-        subcategories = tree.xpath('//option[@value]/text()')
-        subcategories_links = tree.xpath('//option[@value]//@value')
-        for i in range(len(subcategories)):
-            if(subcategories_links[i] == "#" or subcategories[i] == "Alcoholic drinks"):
-                continue
-            
-            subDict = parseSloganPage(formatUrl(subcategories_links[i], data[category]))
-            categories[category][subcategories[i]] = subDict
-            time.sleep(0.05)
-        time.sleep(0.1)
+        categories[category] = parseSingleCategory(data[category])
         #pprint.pprint(categories[category])
+        time.sleep(0.1)
 
     output = open('rawSlogans.json', 'w')
     json.dump(categories, output)
@@ -78,8 +103,10 @@ def parseCategories():
     f.close()
     # print(categories)
 
-
+startTime = time.time()
+slogan_count = 0
 parseCategories()
-page_url = 'http://www.textart.ru/database/english-advertising-slogans/restaurant-advertising-slogans.html'
+print(slogan_count,"Slogans Parsed in",time.time()-startTime,"seconds")
+# page_url = 'http://www.textart.ru/advertising/slogans/car-rental.html'
 # print(parseSloganPage(page_url))
 
