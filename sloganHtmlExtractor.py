@@ -18,6 +18,7 @@ def parseSloganPage(url, categoryUrl, isFirstPage=True):
         return parseSingleCategory(url)
     def removeEmsp(x): return x.replace("\u2003", "")
     def startsNewline(x): return not x[0] == "\n"
+    def replaceApostrophe(x): return x.replace(u"\u2019","\'")
     def removeNonAlpha(x): return re.sub('[\W_]+', ' ', x, flags=re.UNICODE)
     # print(list(map(removeEmsp, tree.xpath('//p[@class="paragraf"]/text()'))))
     companies = list(map(removeNonAlpha, list(filter(startsNewline, list(
@@ -35,9 +36,12 @@ def parseSloganPage(url, categoryUrl, isFirstPage=True):
             if(not companies[j] in pairs):
                 pairs[companies[j]] = list()
             # print(companies[j], ">>", slogan)
+            slogan = replaceApostrophe(slogan)
+            slogan = re.sub('[\W_]+', ' ', slogan, flags=re.UNICODE)
             pairs[companies[j]].append(slogan)
             j += 1
         else:
+            slogan = replaceApostrophe(slogan)
             slogan = re.sub('[\W_]+', ' ', slogan, flags=re.UNICODE)
 
             pairs[companies[j - 1]].append(slogan)
