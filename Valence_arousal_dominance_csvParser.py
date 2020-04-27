@@ -3,6 +3,9 @@ import numpy as np
 
 myCsv = pd.read_csv("Valence_Arousal_Dominance_WarrinerEtAl.csv", usecols =["Word", "Valence", "Arousal", "Dominance"])
 
+def getVAD():
+    return pd.read_csv("Valence_Arousal_Dominance_WarrinerEtAl.csv", usecols =["Word", "Valence", "Arousal", "Dominance"])
+
 def getValence(word):
     if(len(myCsv.loc[myCsv['Word'] == word]) == 0):
         return -1
