@@ -48,6 +48,8 @@ hub_layer = hub.KerasLayer(embedding, input_shape=[],
 # print(slogans.values)
 
 train, test = train_test_split(df, test_size=0.4, random_state=192)
+test, validate = train_test_split(test, test_size=0.25, random_state=192)
+
 
 categ = train.loc[:,'Apparel':'Transport and Logistics']
 slog = train.drop(df.loc[:,'Apparel':'Transport and Logistics'].columns, axis=1)
@@ -57,8 +59,13 @@ test_categ = test.loc[:,'Apparel':'Transport and Logistics']
 test_slog = test.drop(df.loc[:,'Apparel':'Transport and Logistics'].columns, axis=1)
 test_slog = test_slog.drop(['EncodedValues'], axis=1)
 
+val_categ = validate.loc[:,'Apparel':'Transport and Logistics']
+val_slog = validate.drop(df.loc[:,'Apparel':'Transport and Logistics'].columns, axis=1)
+val_slog = val_slog.drop(['EncodedValues'], axis=1)
+
 traindata = tf.data.Dataset.from_tensor_slices((slog["Slogan"].values, categ.values))
 testdata = tf.data.Dataset.from_tensor_slices((test_slog["Slogan"].values, test_categ.values))
+valdata = tf.data.Dataset.from_tensor_slices((val_slog["Slogan"].values, val_categ.values))
 
 
 # slogans = slogans.apply(lstToString)
@@ -88,7 +95,7 @@ model.compile(optimizer='adam',
 
 history = model.fit(traindata.shuffle(5000).batch(512),
                     epochs=10,
-                    validation_data=testdata.batch(512),
+                    validation_data=valdata.batch(512),
                     verbose=1)
 
 results = model.evaluate(testdata.batch(512), verbose=2)
