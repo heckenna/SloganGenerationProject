@@ -21,4 +21,18 @@ def getAverageDimensions(slogan):
 
     return avg
 
-print(getAverageDimensions('abduction abdomen abbey'))
+def getTotalWords(slogan):
+    return len(slogan.split())
+
+def getValidWords(slogan):
+    sum = 0
+    for word in slogan.split():
+        if getValence(word) != -1:
+            sum += 1
+    return sum
+
+def getRating(slogan):
+    return round(getValidWords(slogan)/getTotalWords(slogan), 2)
+
+
+# print(getAverageDimensions('abduction abdomen abbey'))

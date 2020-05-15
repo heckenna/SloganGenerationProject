@@ -8,7 +8,7 @@ def getNRCemotions():
   return myCsv
 
 
-#print(getNRCemotions())
+print(getNRCemotions())
 
 
 
